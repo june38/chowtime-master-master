@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 60%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+   border: 2px solid #d1c6d1;
+   background: #ef788c;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ef788c), to(#ef788c));
+   background: -webkit-linear-gradient(top, #ef788c, #ef788c);
+   background: -moz-linear-gradient(top, #ef788c, #ef788c);
+   background: -ms-linear-gradient(top, #ef788c, #ef788c);
+   background: -o-linear-gradient(top, #ef788c, #ef788c);
+   background-image: -ms-linear-gradient(top, #ef788c 0%, #ef788c 100%);
+   padding: 11px 22px;
+   -webkit-border-radius: 23px;
+   -moz-border-radius: 23px;
+   border-radius: 23px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #ef788c 0 1px 0;
+   color: #ffffff;
+   font-size: 16px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 2px solid #cccaca;
+   text-shadow: #ed667f 0 1px 0;
+   background: #ed667f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ed667f), to(#ed667f));
+   background: -webkit-linear-gradient(top, #ed667f, #ed667f);
+   background: -moz-linear-gradient(top, #ed667f, #ed667f);
+   background: -ms-linear-gradient(top, #ed667f, #ed667f);
+   background: -o-linear-gradient(top, #ed667f, #ed667f);
+   background-image: -ms-linear-gradient(top, #ed667f 0%, #ed667f 100%);
+   color: #000000;
+   }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
